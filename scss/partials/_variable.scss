@@ -1,0 +1,48 @@
+$tNav:15px;
+
+$altoImg:500px;
+$anchoImg:700px;
+
+
+
+
+
+@mixin tituloPrincipal($altotitulo){
+    font-family: "Parisienne", cursive;
+    font-weight: bold;
+    text-align: center;
+    font-size: $altotitulo;
+}
+
+@mixin grilla ($altoGrilla){
+    display: grid;
+    height: $altoGrilla;
+    background-image: url(../img/fondo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+@mixin tituloPag($altura , $ancho){
+    display: grid;
+    grid-area: a1;
+    grid-template-areas: "elem";
+    width: $ancho;
+    height: $altura;
+    align-content: center;
+}
+
+@mixin tituloPag1($tamLetra){
+    font-family: "Parisienne", cursive;
+    font-size: $tamLetra;
+    font-weight: bold;
+    text-align: center;
+    grid-area: elem;
+}
+@mixin parrafoPag($alturaLetra){
+    font-size: $alturaLetra;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+    background-color: rgba(240, 112, 208, 0.233);
+    width: 100%;
+    height: 100%;
+}

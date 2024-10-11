@@ -1,0 +1,397 @@
+
+@import "variable";
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@media only screen and (min-width: 1000px) {
+    /* Inicio del header */
+    .tituloPrincipal {
+        @include tituloPrincipal(100px);
+    }
+    /* Fin Del header */
+    /* Inicio Nav */
+    #tituloNav {
+    font-weight: bold;
+    font-size: $tNav;
+    }
+    #tNav {
+        font-size: $tNav;
+    }
+    /* Fin Nav */
+    /* Inicio del main */
+    #grillaPag {
+        @include grilla(2500px);
+        grid-template-rows: 110px 500px 500px 500px 500px;
+        grid-template-columns: 49% 49%;
+        grid-template-areas: "a1 a1" "a2 a3 " "a2 a3" "a4 a5" "a4 a5";
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        align-content: space-evenly;
+    }
+    #titulopag {
+        @include tituloPag(90% , 90%);
+    }
+    .titulopag1 {
+        @include tituloPag1 (100px);
+    }
+    #elem1Pag {
+        display: grid;
+        grid-area: a2;
+        width: 90%;
+        height: 90%;
+        grid-template-rows: 50% 45%;
+        grid-template-areas: "elem1" "elem1b";
+        justify-items: center;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+    }
+    #img1Pag {
+        display: flex;
+        grid-area: elem1;
+        width: $anchoImg;
+        height: $altoImg;
+        justify-content: center;
+        align-content: center;
+    }
+    #txt1Pag {
+        grid-area: elem1b;
+    }
+    #elem2Pag{
+        display: grid;
+        grid-area: a3;
+        width: 90%;
+        height: 90%;
+        grid-template-rows: 50% 45%;
+        grid-template-areas: "elem2" "elem2b";
+        justify-items: center;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+    }
+    #img2Pag {
+        display: flex;
+        grid-area: elem2;
+        width: $anchoImg;
+        height: $altoImg;
+        justify-content: center;
+        align-content: center;
+    }
+    #txt2Pag {
+        grid-area: elem2b;
+    }
+    #elem3Pag {
+        display: grid;
+        grid-area: a4;
+        width: 90%;
+        height: 90%;
+        grid-template-rows: 50% 45%;
+        grid-template-areas: "elem3" "elem3b";
+        justify-items: center;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+    }
+    #img3Pag {
+        display: flex;
+        grid-area: elem3;
+        width: $anchoImg;
+        height: $altoImg;
+        justify-content: center;
+        align-content: center;
+    }
+    #txt3Pag {
+        grid-area: elem3b;
+    }
+    #elem4Pag {
+        display: grid;
+        grid-area: a5;
+        width: 90%;
+        height: 90%;
+        grid-template-rows: 50% 45%;
+        grid-template-areas: "elem4" "elem4b";
+        justify-items: center;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+    }
+    #img4Pag {
+        display: flex;
+        grid-area: elem4;
+        width: $anchoImg;
+        height: $altoImg;
+        justify-content: center;
+        align-content: center;
+    }
+    #txt4Pag {
+        grid-area: elem4b;
+    }
+    .parrafoPag {
+        @include parrafoPag (20px);
+    }
+    /* FIN DEL MAIN */
+}
+@media only screen and (max-width: 1000px) {
+    /* Inicio del header */
+    .tituloPrincipal {
+        @include tituloPrincipal(100px);
+    }
+    /* Fin Del header */
+    /* Inicio Nav */
+    #tituloNav {
+        font-weight: bold;
+        font-size: $tNav;
+    }
+    #tNav {
+        font-size: $tNav;
+    }
+    /* Fin Nav */
+    /* Inicio del main */
+    #grillaPag {
+        @include grilla(2500px);
+        grid-template-rows: 110px 500px 500px 500px 500px;
+        grid-template-columns: 49% 49%;
+        grid-template-areas: "a1 a1" "a2 a3 " "a2 a3" "a4 a5" "a4 a5";
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        align-content: space-evenly;
+    }
+    #titulopag {
+        @include tituloPag(90% , 90%);
+    }
+    .titulopag1 {
+        @include tituloPag1(100px);
+    }
+    #elem1Pag {
+        display: grid;
+        grid-area: a2;
+        width: 90%;
+        height: 90%;
+        grid-template-rows: 50% 45%;
+        grid-template-areas: "elem1" "elem1b";
+        justify-items: center;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+    }
+    #img1Pag {
+        display: flex;
+        grid-area: elem1;
+        width: 90%;
+        height: 80%;
+        justify-content: center;
+        align-content: center;
+    }
+    #txt1Pag {
+        grid-area: elem1b;
+    }
+    #elem2Pag {
+        display: grid;
+        grid-area: a3;
+        width: 90%;
+        height: 90%;
+        grid-template-rows: 50% 45%;
+        grid-template-areas: "elem2" "elem2b";
+        justify-items: center;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+    }
+    #img2Pag {
+        display: flex;
+        grid-area: elem2;
+        width: 90%;
+        height: 80%;
+        justify-content: center;
+        align-content: center;
+    }
+    #txt2Pag {
+        grid-area: elem2b;
+    }
+    #elem3Pag {
+        display: grid;
+        grid-area: a4;
+        width: 90%;
+        height: 90%;
+        grid-template-rows: 50% 45%;
+        grid-template-areas: "elem3" "elem3b";
+        justify-items: center;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+    }
+    #img3Pag {
+        display: flex;
+        grid-area: elem3;
+        width: 90%;
+        height: 80%;
+        justify-content: center;
+        align-content: center;
+    }
+    #txt3Pag {
+        grid-area: elem3b;
+    }
+    #elem4Pag {
+        display: grid;
+        grid-area: a5;
+        width: 90%;
+        height: 90%;
+        grid-template-rows: 50% 45%;
+        grid-template-areas: "elem4" "elem4b";
+        justify-items: center;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+    }
+    #img4Pag {
+        display: flex;
+        grid-area: elem4;
+        width: 90%;
+        height: 80%;
+        justify-content: center;
+        align-content: center;
+    }
+    #txt4Pag {
+        grid-area: elem4b;
+    }
+    .parrafoPag {
+        @include parrafoPag(20px);
+    }
+    /* FIN DEL MAIN */
+}
+@media only screen and (max-width: 850px) {
+    /* Inicio del header */
+    .tituloPrincipal {
+        @include tituloPrincipal(50px);
+    }
+    /* Fin Del header */
+    /* Inicio Nav */
+    #tituloNav {
+        font-weight: bold;
+        font-size: $tNav;
+    }
+    #tNav {
+        font-size: $tNav;
+    }
+    /* Fin Nav */
+    /* Inicio del Main */
+    #grillaPag {
+        @include grilla(2300px);
+        grid-template-rows: 110px 500px 500px 500px 500px;
+        grid-template-columns: 95%;
+        grid-template-areas: "a1 " "a2 " "a3 " "a4" "a5";
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    #titulopag {
+        @include tituloPag(90% , 90%);
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    .titulopag1 {
+        @include tituloPag1(70px);
+    }
+    /* Inico elem1 */
+    #elem1Pag {
+        display: grid;
+        grid-area: a2;
+        width: 90%;
+        height: 90%;
+        grid-template-rows: 50% 45%;
+        grid-template-areas: "elem1" "elem1b";
+        justify-items: center;
+        align-content: center;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+    }
+    #img1Pag {
+        display: flex;
+        grid-area: elem1;
+        width: 60%;
+        height: 100%;
+        justify-content: center;
+        align-content: center;
+    }
+    #txt1Pag {
+        grid-area: elem1b;
+    }
+    /* fin elem1 */
+    /* Incio elem2 */
+    #elem2Pag {
+        display: grid;
+        grid-area: a3;
+        width: 90%;
+        height: 90%;
+        grid-template-rows: 50% 45%;
+        grid-template-areas: "elem2" "elem2b";
+        justify-items: center;
+        align-content: center;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+    }
+    #img2Pag {
+        display: flex;
+        grid-area: elem2;
+        width: 60%;
+        height: 100%;
+        justify-content: center;
+        align-content: center;
+    }
+    #txt2Pag {
+        grid-area: elem2b;
+    }
+    /* Fin elem2 */
+    /* Inicio elem3 */
+    #elem3Pag {
+        display: grid;
+        grid-area: a4;
+        width: 90%;
+        height: 90%;
+        grid-template-rows: 50% 45%;
+        grid-template-areas: "elem3" "elem3b";
+        justify-items: center;
+        align-content: center;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+    }
+    #img3Pag {
+        display: flex;
+        grid-area: elem3;
+        width: 60%;
+        height: 100%;
+        justify-content: center;
+        align-content: center;
+    }
+    #txt3Pag {
+        grid-area: elem3b;
+    }
+    /* Fin elem3 */
+    /* Inicio elem4 */
+    #elem4Pag {
+        display: grid;
+        grid-area: a5;
+        width: 90%;
+        height: 90%;
+        grid-template-rows: 50% 45%;
+        grid-template-areas: "elem4" "elem4b";
+        justify-items: center;
+        align-content: center;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+    }
+    #img4Pag {
+        display: flex;
+        grid-area: elem4;
+        width: 60%;
+        height: 100%;
+        justify-content: center;
+        align-content: center;
+    }
+    #txt4Pag {
+        grid-area: elem4b;
+    }
+    /*Fin elem4 */
+    .parrafoPag {
+        @include parrafoPag(13px);
+    }
+}
